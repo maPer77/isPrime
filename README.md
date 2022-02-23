@@ -18,6 +18,9 @@ https://maper77.github.io/isPrime/
 </script>
 ````
 
+result : boolean
+list: array - (all prime numbers up to the given number)
+
 ````
 result: true
 list: [2, 3, 5, 7, 11, 13, 17]
