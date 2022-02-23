@@ -11,9 +11,9 @@ https://maper77.github.io/isPrime/
 
 ````
 <script type="module">
-import isPrime from "./index.js";
-const [ result, list ] = isPrime(17);
-console.log(result, list);
+    import isPrime from "./index.js";
+    const [ result, list ] = isPrime(17);
+    console.log(result, list);
 </script>
 ````
 
