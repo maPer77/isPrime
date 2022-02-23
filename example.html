@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isPrime</title>
+</head>
+<body>
+
+    <form>
+        <input id="number" type="number" value="1000">
+        <button type="submit">Calc</button>
+    </form>
+
+    <section id="container"></section>
+
+    <script type="module">
+        import isPrime from "./index.js";
+        // USE
+
+        document.querySelector('form').addEventListener('submit', (e)=>{
+            e.preventDefault();
+            e.stopPropagation();
+
+            const number = document.getElementById('number');
+            
+            const [ result, list ] = isPrime(number.value);
+
+            const container = document.getElementById("container");
+            container.insertAdjacentHTML("beforeend", `${number.value} Result: ${result}`);
+            container.insertAdjacentHTML("beforeend", `<br>Quantity: ${list.length} primes`);
+            container.insertAdjacentHTML("beforeend", `<br>All primes found: <br><code>${list.join(", ") }<code/>`);
+        });
+
+        
+    </script>
+</body>
+</html>
