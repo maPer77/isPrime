@@ -2,7 +2,7 @@
 
 Check if number is prime
 
-# Examle
+# Example
 
 https://maper77.github.io/isPrime/
 
